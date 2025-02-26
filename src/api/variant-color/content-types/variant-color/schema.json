@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variant_colors",
+  "info": {
+    "singularName": "variant-color",
+    "pluralName": "variant-colors",
+    "displayName": "Variant Colors"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Type": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.color-type",
+      "required": true
+    }
+  }
+} 

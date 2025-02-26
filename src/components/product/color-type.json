@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_color_types",
+  "info": {
+    "displayName": "Color Type",
+    "description": "Define color either as a hex value or an image"
+  },
+  "options": {},
+  "attributes": {
+    "Color": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
+    }
+  }
+} 

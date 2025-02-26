@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seeds",
+  "info": {
+    "singularName": "seed",
+    "pluralName": "seeds",
+    "displayName": "seeds"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seeds": {
+      "type": "richtext"
+    }
+  }
+}
