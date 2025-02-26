@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variant_types",
+  "info": {
+    "singularName": "variant-type",
+    "pluralName": "variant-types",
+    "displayName": "Variant Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
