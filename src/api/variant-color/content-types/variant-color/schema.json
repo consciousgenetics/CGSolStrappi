@@ -4,7 +4,8 @@
   "info": {
     "singularName": "variant-color",
     "pluralName": "variant-colors",
-    "displayName": "Variant Colors"
+    "displayName": "product-variants-colors",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,9 +17,9 @@
     },
     "Type": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "product.color-type",
       "required": true
     }
   }
-} 
+}

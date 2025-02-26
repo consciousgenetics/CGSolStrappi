@@ -10,4 +10,10 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET'),
     },
   },
+  url: env('PUBLIC_URL', 'https://colorful-presence-d5ad21ba44.strapiapp.com'),
+  api: {
+    token: {
+      salt: env('API_TOKEN_SALT'),
+    },
+  }
 }); 
