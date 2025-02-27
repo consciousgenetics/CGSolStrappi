@@ -12,14 +12,14 @@
   "attributes": {
     "Name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "Image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "variant_color": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::variant-color.variant-color",
+      "inversedBy": "variant_types"
     }
   }
 }

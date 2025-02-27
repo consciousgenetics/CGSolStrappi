@@ -4,8 +4,7 @@
   "info": {
     "singularName": "product-variant-color",
     "pluralName": "product-variant-colors",
-    "displayName": "Product Variant Color",
-    "description": "Define product colors for variants"
+    "displayName": "Product Variant Color"
   },
   "options": {
     "draftAndPublish": true
@@ -13,17 +12,10 @@
   "attributes": {
     "Name": {
       "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "Color": {
-      "type": "string",
       "required": true
     },
-    "variant_types": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::variant-type.variant-type"
+    "Color": {
+      "type": "string"
     }
   }
 }

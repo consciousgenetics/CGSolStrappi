@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variant_colors",
+  "info": {
+    "singularName": "variant-color",
+    "pluralName": "variant-colors",
+    "displayName": "Variant Color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Color": {
+      "type": "string",
+      "required": true
+    },
+    "variant_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::variant-type.variant-type",
+      "mappedBy": "variant_color"
+    }
+  }
+}
