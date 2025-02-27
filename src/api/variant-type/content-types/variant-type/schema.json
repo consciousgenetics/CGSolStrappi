@@ -4,7 +4,8 @@
   "info": {
     "singularName": "variant-type",
     "pluralName": "variant-types",
-    "displayName": "Variant Type"
+    "displayName": "Variant Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,13 @@
       "relation": "manyToOne",
       "target": "api::variant-color.variant-color",
       "inversedBy": "variant_types"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
